@@ -1,17 +1,66 @@
-<!-- Archivo principal de la interfaz. -->
+<!-- Página de bienvenida -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Clasificador de Granos de Café</title>
-    <!-- Enlace a Bootstrap CSS (opcional) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css"> <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1 class="text-center">Sistema Clasificador de Granos de Café</h1>
-    <script src="scripts/app.js"></script> <!-- Enlace al archivo JS -->
-    <h1> Prueba de token activado</h1>
+    <div class="container">
+        <header>
+            <h1>Sistema Clasificador de granos de café</h1>
+            <p class="subtitulo">¿Cómo funciona el sistema?</p>
+        </header>
+        
+        <section class="content">
+            <div class="steps">
+                <div class="step">
+                    <img src="assets/paso1.png" alt="Paso 1">
+                </div>
+                <br>
+                <div class="step">
+                    <img src="assets/paso2.png" alt="Paso 2">
+                </div>
+                <br>
+                <div class="step">
+                    <img src="assets/paso3.png" alt="Paso 3">
+                </div>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <h3>Paso 01</h3>
+                    <p>Cargar imagen del grano de café</p>
+                </div>
+                <div class="step">
+                    <h3>Paso 02</h3>
+                    <p>Clasificar la imagen</p>
+                </div>
+                <div class="step">
+                    <h3>Paso 03</h3>
+                    <p>Visualizar el resultado</p>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <img src="assets/flecha.png" alt="Paso 1">
+                </div>
+            </div>
+
+            <div class="demo">
+                <img src="assets/demo.gif" alt="Demostración del sistema">
+                <p>¿Listo para usar el sistema?</p>
+                <a href="main.html" class="btn">Ir al sistema</a>
+            </div>
+        </section>
+        
+        <img src="assets/robot-superior-derecha.jpg" class="decor-top" alt="Robot decorativo superior">
+        <img src="assets/robot-inferior-izquierdo.jpg" class="decor-bottom" alt="Robot decorativo inferior">
+    </div>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
+

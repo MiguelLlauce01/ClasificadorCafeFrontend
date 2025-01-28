@@ -1,0 +1,126 @@
+/* Importar fuente personalizada (si es necesario) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-color: #f8f3dc; /* Color de fondo */
+    font-family: 'Montserrat', sans-serif; /* Fuente */
+    color: #7a4e20; /* Color del texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos del título */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #a87029;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor para los pasos y la demo */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Espaciado entre los elementos */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Sección de pasos en formato vertical */
+.steps {
+    display: flex;
+    flex-direction: column; /* Cambia a disposición vertical */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cada paso */
+.step {
+    display: flex;
+    flex-direction: column; /* Hace que los elementos estén en columna */
+    align-items: center;
+    text-align: left;
+    gap: 0px;
+}
+
+
+.step img {
+    width: 120px; /* Ajustar tamaño de imágenes */
+    height: auto;
+    border-radius: 10px;
+}
+
+.step-text {
+    font-size: 1.2rem;
+    background-color: #f8f3dc;
+    border: 2px solid #a87029;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+/* Contenedor del GIF y botón */
+.demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.demo img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #a87029;
+}
+
+.demo p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Botón "Ir al sistema" */
+.btn {
+    background-color: #6b8e23;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #556b2f;
+}
+
+/* Imágenes decorativas (robots y granos de café) */
+.decor-top {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+}
+
+.decor-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+}
