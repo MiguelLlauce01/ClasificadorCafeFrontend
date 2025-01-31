@@ -1,2 +1,39 @@
 <!-- Página  principal del sistema -->
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Clasificador de Granos de Café</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="containerMain">
+        <!-- Título del sistema -->
+        <h1>Sistema Clasificador de granos de café</h1>
+
+        <!-- Botón para subir imagen -->
+        <input type="file" id="inputImagen" accept="image/*" hidden>
+        <label for="inputImagen" class="btn-upload">Subir imagen</label>
+
+        <!-- Contenedor de la vista previa de la imagen -->
+        <div class="image-preview" id="preview">
+            <p>Visualización previa de la imagen</p>
+        </div>
+
+        <!-- Botón de clasificación (Deshabilitado por defecto) -->
+        <button id="btnClasificar" class="btn-classify" disabled>Clasificar</button>
+
+        <!-- Elementos decorativos -->
+        <img src="assets/robot-superior-derecha.jpg" class="decor-top-main" alt="Robot decorativo superior">
+        <img src="assets/robot-inferior-izquierdo.jpg" class="decor-bottom-main" alt="Robot decorativo inferior">
+
+        <div class="decorations">
+            <img src="assets/granos-de-cafe-izquierda.png" class="coffee-left" alt="Decoración lateral izquierda">
+            <img src="assets/granos-de-cafe-derecha.png" class="coffee-right" alt="Decoración lateral derecha">
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

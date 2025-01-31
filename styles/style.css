@@ -11,8 +11,8 @@ body {
 
 /* Contenedor principal */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 90%; /*ancho de la interfaz*/
+    margin: 10px auto;/*espacio de arriba hacia abajo de la interfaz*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,7 +120,116 @@ h1 {
 
 .decor-bottom {
     position: absolute;
+    top: 635px;
     bottom: 10px;
     left: 10px;
     width: 100px;
+}
+
+/*=============================================================================*/
+/*CSS PARA LA EL ARCHVIO main.html*/
+/* Contenedor principal */
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    width: 90%; /* Opcional: Puedes ajustar el ancho si es necesario */
+    margin: 10px auto; /* Centra horizontalmente sin afectar el eje vertical */
+    text-align: center;
+    background-color: #f8f3dc;
+    position: relative;
+}
+
+
+/* Estilo del título */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #a87029;
+}
+
+/* Botón de subir imagen */
+.btn-upload {
+    background-color: #6b8e23;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-upload:hover {
+    background-color: #556b2f;
+}
+
+/* Contenedor de la imagen cargada */
+.image-preview {
+    width: 350px;
+    height: 320px;
+    border: 5px solid #a87029;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+/* Botón de clasificación */
+.btn-classify {
+    background-color: #c2e3a7;
+    color: #5a5a5a;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-classify:enabled {
+    background-color: #6b8e23;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-classify:enabled:hover {
+    background-color: #556b2f;
+}
+
+/* Imágenes decorativas */
+.decor-top-main {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+}
+
+.decor-bottom-main {
+    position: absolute;
+    top: 510px;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+}
+/**/
+.coffee-left {
+    position: absolute;
+    left: 120px;/*separación del lado izquierdo hacia la imagen*/
+    top: 60%;/*Posición hacia arriba*/
+    transform: translateY(-50%);
+    width: 200px;/*Tamaño de la imagen*/
+}
+
+.coffee-right {
+    position: absolute;
+    right: 120px;/*separación del lado derecho hacia la imagen*/
+    top: 60%;
+    transform: translateY(-50%);
+    width: 200px;
 }
