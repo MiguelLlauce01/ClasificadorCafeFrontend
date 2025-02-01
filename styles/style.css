@@ -233,3 +233,45 @@ h1 {
     transform: translateY(-50%);
     width: 200px;
 }
+/*=========================================================*/
+/*ESTILOS PARA LOS MENSAJES DE ERROR y RESULTADO*/
+.error-message { /*mensaje de error cuando la extensión de la imagen es incorrecta*/
+    display: none;
+    width: 50%; /* Reducir el ancho al 50% */
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px; /* Ajuste en la parte inferior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Corrección para centrar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Pequeña sombra para resaltar */
+}
+
+
+/* Estilos para la etiqueta y el texto del resultado */
+.resultado-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.resultado-etiqueta {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #7a4e20;
+    display: none; /* Oculto por defecto */
+}
+
+.resultado-texto {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a87029;
+    display: none; /* Oculto por defecto */
+}
+
+
+/*=========================================================*/

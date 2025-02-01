@@ -24,6 +24,13 @@
         <!-- Botón de clasificación (Deshabilitado por defecto) -->
         <button id="btnClasificar" class="btn-classify" disabled>Clasificar</button>
 
+        <!-- Contenedor del resultado -->
+        <div class="resultado-container">
+            <p id="resultadoEtiqueta" class="resultado-etiqueta">Resultado de la clasificación:</p>
+            <p id="resultadoTexto" class="resultado-texto"></p>
+        </div>
+
+
         <!-- Elementos decorativos -->
         <img src="assets/robot-superior-derecha.jpg" class="decor-top-main" alt="Robot decorativo superior">
         <img src="assets/robot-inferior-izquierdo.jpg" class="decor-bottom-main" alt="Robot decorativo inferior">
@@ -34,6 +41,10 @@
         </div>
     </div>
 
+    
+    <!-- Mensaje de error al subir una extensión no permitida-->
+    <p id="errorMensaje" class="error-message" style="display: none;"></p>
+    
     <script src="scripts/app.js"></script>
 </body>
 </html>
