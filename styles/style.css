@@ -3,7 +3,7 @@
 
 body {
     background-color: #f8f3dc; /* Color de fondo */
-    font-family: 'Montserrat', sans-serif; /* Fuente */
+    font-family: 'Arial', sans-serif;/* Fuente */
     color: #7a4e20; /* Color del texto */
     margin: 0;
     padding: 0;
@@ -42,18 +42,16 @@ h1 {
 .steps {
     display: flex;
     flex-direction: column; /* Cambia a disposición vertical */
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/ /*COMENTADO TEMPORALMENTE*/
     gap: 20px;
 }
 
 /* Cada paso */
 .step {
     display: flex;
-    flex-direction: column; /* Hace que los elementos estén en columna */
     align-items: center;
-    text-align: left;
-    gap: 0px;
+    gap: 10px;
 }
 
 
@@ -64,12 +62,16 @@ h1 {
 }
 
 .step-text {
-    font-size: 1.2rem;
-    background-color: #f8f3dc;
-    border: 2px solid #a87029;
-    border-radius: 10px;
-    padding: 10px 15px;
+    text-align: left;
+    font-size: 1.2rem; /*Maximiza o minimiza el contenido*/
+    padding: 10px 15px; /*Separa la alineación izquierda entre la imagen y el texto */
+}
+
+.step-title {
     font-weight: bold;
+    background-color: #d4af37;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 /* Contenedor del GIF y botón */
@@ -78,16 +80,19 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 35%;
+    padding: 5px;
 }
 
-.demo img {
-    width: 100%;
+.gif-container img {
+    width: 550px;
+    height: auto;
+    border: 10px solid #a87029;
     border-radius: 10px;
-    border: 2px solid #a87029;
 }
 
 .demo p {
+    margin-top: 15px;
     font-size: 1.2rem;
     margin-top: 10px;
 }
