@@ -130,6 +130,24 @@ h1 {
     left: 10px;
     width: 100px;
 }
+.decor-cafe-izquierdo {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 60px;
+}
+.decor-cafe-derecho {
+    position: absolute;
+    top: 160px;
+    right: 0px;
+    width: 50px;
+}
+.decor-cafe-inferior {
+    position: absolute;
+    top: 650px;
+    left: 150px;
+    width: 700px;
+}
 
 /*=============================================================================*/
 /*CSS PARA LA EL ARCHVIO main.html*/
